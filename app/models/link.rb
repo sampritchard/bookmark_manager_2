@@ -4,12 +4,14 @@ require 'dm-postgres-adapter'
 class Link
   include DataMapper::Resource
 
-  DataMapper.setup(:default, 'postgres://localhost/database_play')
+
 
   property :id,    Serial
   property :title, String
   property :url,   String
 
-    DataMapper.finalize
-    DataMapper.auto_upgrade!
 end
+
+DataMapper.setup(:default, "postgres://localhost/bookmark_manager_#{ENV['RACK_ENV']}")
+DataMapper.finalize
+DataMapper.auto_upgrade!
