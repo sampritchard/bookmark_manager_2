@@ -13,5 +13,3 @@ class Link
     DataMapper.finalize
     DataMapper.auto_upgrade!
 end
-
-#hello
