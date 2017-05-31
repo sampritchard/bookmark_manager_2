@@ -1,5 +1,10 @@
 # bookmark_manager
 
+Intro:
+======
+
+This is a program that uses relational databases to store saved internet bookmarks and allows users to set and filter by tags.
+
 User Stories:
 =============
 ```
