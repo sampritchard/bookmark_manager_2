@@ -1,4 +1,3 @@
-require_relative 'web_helpers'
 
 feature "Find links on a specific topic" do
 
