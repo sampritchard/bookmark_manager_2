@@ -13,7 +13,7 @@ class BookmarkManager < Sinatra::Base
 
   get '/links' do
     @links = Link.all
-    erb :'links/index'
+    erb :'links/links'
   end
 
   get '/links/new' do
@@ -31,7 +31,7 @@ class BookmarkManager < Sinatra::Base
   get '/tags/:name' do
     tag = Tag.first(name: params[:name])
     @links = tag ? tag.links : []
-    @test = params[:name]
+    p @links
     erb :"links/index"
   end
 
