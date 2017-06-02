@@ -35,4 +35,8 @@ class BookmarkManager < Sinatra::Base
     erb :"links/index"
   end
 
+  get '/user/add' do
+    erb :'users/add'
+  end
+
 end
